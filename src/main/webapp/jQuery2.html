@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 스크랩트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 구글 CDN 활용 -->
+</head>
+<body>
+
+
+	<p>1 건강 조심하세요.</p>
+	<p class="p">2 건강 조심하세요.</p>
+	<p id="p1">3 건강 조심하세요.</p>
+
+	<button>4 건강을 조심하세요</button>
+	
+	<button>나를 클릭하면 버튼이 사라져요</button>
+	
+
+	<!-- 스크랩트 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/* $("p").click(function() {
+				$(this).hide();
+			})
+			$(".p").click(function() {
+				$(this).hide();
+			})
+			$("#p").click(function() {
+				$(this).hide();
+			})
+			
+			$("button").dbclick(function() {
+				$("this").hide();
+			})
+			$("button").mouseenter(function() {
+				$(".p").hide();
+			});
+			$("button").mouseleave(function() {
+				$("#p").hide();
+			}); 
+			$("#p1").mouseenter(function(){
+				  alert("You entered p1!");
+				});
+			$("button").on("click", function(){
+				$(this).hide();
+			}); */
+			$("button").click(function(){
+				  $("p").toggle();
+				});
+		});
+	</script>
+</body>
+</html>
